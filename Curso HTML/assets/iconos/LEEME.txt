@@ -1,0 +1,5 @@
+VALTITUDE — colección de iconos SVG
+Color de línea: #E2C799
+Fondo: transparente
+Uso: insertar cada archivo SVG con <img src="images/icons/nombre.svg" alt="...">.
+Los SVG son editables: podés cambiar stroke="#E2C799" por otro HEX.

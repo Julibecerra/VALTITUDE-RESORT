@@ -1,0 +1,82 @@
+/*COLORES
+Fondo General: Verde bosque nocturno profundo (#07140E / #0A1C14)
+Superficies & Tarjetas: Verde esmeralda umbrío (#12281D / #183527) con bordes sutilmente iluminados.
+Acentos & Botones: Oro pálido champán satinado (#E2C799 / #D8B780) para llamadas a la acción, estados activos y badges de categoría.
+Texto: Blanco marfil para máxima claridad (#F5F7F5) y salvia suave (#9FB4A7) para metadatos.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-ppal: carmorand;
+    --font-sec: plus+jakarta+Sans;
+    --bg-ppal: #07140e;
+    --bg-sec: #111E18;
+    --titles: #E2C799;
+    --text: #F5F7F5;
+    --accent: #E2C799;
+}
+
+/* RESET */
+
+body {
+    background-color: var(--bg-ppal);
+}
+
+/* TITLES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+/*FONT FAMILY: CARMORAND */
+    font-family: var(--font-ppal);
+    color: var(--titles)
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4 {font-size: 1.75rem;}
+
+p,
+a {
+    font-family: var(--font-sec); 
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+}
+/* ENCABEZADO */
+.imagen-ppal{
+    width: 100%;
+    height: 500px;
+}
+
+.imagen-encabezado {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* BARRA NAVEGACION*/
+
+.logo-nav { 
+    width: 250px;
+}
+
+ul {
+    list-style: none;
+}

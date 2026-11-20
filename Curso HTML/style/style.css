@@ -10,8 +10,8 @@ Texto: Blanco marfil para máxima claridad (#F5F7F5) y salvia suave (#9FB4A7) pa
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --font-ppal: carmorand;
-    --font-sec: plus+jakarta+Sans;
+    --font-ppal: 'Cormorant', serif;
+    --font-sec: 'Plus Jakarta Sans', sans-serif;
     --bg-ppal: #07140e;
     --bg-sec: #111E18;
     --titles: #E2C799;
@@ -20,6 +20,12 @@ Texto: Blanco marfil para máxima claridad (#F5F7F5) y salvia suave (#9FB4A7) pa
 }
 
 /* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--bg-ppal);
@@ -34,7 +40,7 @@ h4,
 h5,
 h6 {
 
-/*FONT FAMILY: CARMORAND */
+    /*FONT FAMILY: CARMORAND */
     font-family: var(--font-ppal);
     color: var(--titles)
 }
@@ -42,25 +48,35 @@ h6 {
 h1 {
     font-size: 3rem;
 }
+
 h2 {
     font-size: 2.5rem;
 }
-h3{
+
+h3 {
     font-size: 2rem;
 }
-h4 {font-size: 1.75rem;}
+
+h4 {
+    font-size: 1.75rem;
+}
 
 p,
 a {
-    font-family: var(--font-sec); 
+    font-family: var(--font-sec);
     color: var(--text);
 }
 
 a {
     text-decoration: none;
 }
-/* ENCABEZADO */
-.imagen-ppal{
+
+/* HEADER */
+header {
+    padding: 16px 40px;
+}
+
+.imagen-ppal {
     width: 100%;
     height: 500px;
 }
@@ -71,12 +87,262 @@ a {
 }
 
 
-/* BARRA NAVEGACION*/
+/* NAV BAR*/
 
-.logo-nav { 
-    width: 250px;
+.nav-valtitude {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul {
+.nav-valtitude ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-valtitude ul li {
     list-style: none;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 3px solid #E2C799;
+    border-radius: 30px;
+    font-weight: 600;
+
+}
+
+.nav-button:hover {
+    background-color: #E2C799;
+    color: #091610;
+    border-color: #D8B780;
+}
+
+.logo-nav {
+    width: 150px;
+    height: auto;
+}
+
+.nav-link:hover {
+    color: #D8B780;
+}
+
+/* MAIN */
+
+.portada {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.portada-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portada-content {
+    width: 50%;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portada-content h1 {
+    font-size: 3.5rem;
+}
+
+.portada-content h4 {
+    font-size: 1.5rem;
+}
+
+.portada-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.portada-acciones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.portada-boton {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #E2C799;
+    color: #F5F7F5;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.portada-boton:hover {
+    background-color: #E2C799;
+    color: #091610;
+}
+
+/*ACTIVIDADES DESTACADAS*/
+
+.actividades-index {
+    background-color: #F5F3ED;
+    padding: 60px 40px;
+    margin-top: 35px;
+}
+
+.actividades-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.actividades-intro h2 {
+    color: #091610;
+}
+
+.actividades-intro p {
+    color: #52675A;
+}
+
+.actividades-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.actividad {
+    width: 33%;
+    padding: 5px;
+    background-color: #111E18;
+    border-radius: 5px;
+}
+
+.actividad img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.actividad-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.actividad-info figure img {
+    width: 55px;
+    height: 55px;
+}
+
+.actividad-texto {
+    text-align: left;
+    margin: 7px;
+}
+
+
+
+
+/* FOOTER */
+
+.valtitude-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer-img {
+    width: 140px;
+    height: auto;
+}
+
+.footer-texto {
+    text-align: right;
+    font-size: 13px;
+}
+
+/* PAGE RESORT */
+
+.resort-portada {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.resort-portada-img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.resort-portada-content {
+    width: 40%;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-85%);
+}
+
+.resort-portada-content h2 {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.resort-portada-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.resort-portada-content p {
+    text-align: left;
+}
+
+/* TIPOS DE HABITACIONES */
+
+.habitaciones-titulo {
+    text-align: center;
+    margin: 50px 0px;
+}   
+
+.habitaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.habitacion {
+    width: 30%;
+    padding: 20px;
+    background-color: #111E18;
+    border-radius: 5px;
+}
+
+.habitaciones-imgs {
+    width: 100%;
+    height: 220px;
+}
+
+.habitaciones-texto{
+    text-align: left;
+    margin: 7px
 }

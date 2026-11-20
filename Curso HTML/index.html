@@ -1,55 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALTITUDE | Sports & Wellness Resort</title>
+    <title>VALTITUDE | Sports & Wellness Resort</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
 
     <header>
-        <figure>
-            <img src="assets/logos/logo png.png" alt="" class="logo-nav">
-        </figure>
-        <nav>
+        <nav class="nav-valtitude">
+
+            <a href="./index.html">
+                <figure>
+                    <img src="assets/logos/logo png.png" alt="VALTITUDE" class="logo-nav">
+                </figure>
+            </a>
+
             <ul>
                 <li>
-                    <a href="#">Inicio</a>
+                    <a class="nav-link" href="#">Inicio</a>
                 </li>
                 <li>
-                    <a href="./pages/actividades.html">Actividades</a>
+                    <a class="nav-link" href="./pages/actividades.html">Actividades</a>
                 </li>
                 <li>
-                    <a href="./pages/resort.html">El Resort</a>
+                    <a class="nav-link" href="./pages/resort.html">El Resort</a>
                 </li>
                 <li>
-                    <a href="./pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                 </li>
                 <li>
-                    <a href="./pages/contacto.html">Contacto</a>
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
+            <div><a href="./pages/contacto.html" class="nav-button">SER MIEMBRO</a></div>
         </nav>
     </header>
 
 
     <main>
-        <h4>CLUB RESORT DE MONTAÑA</h4>
-        <h1>DEPORTE BIENESTER Y EXCLUSIVIDAD</h1>
-    <p>Descubrí un lugar donde el deporte, la naturaleza y el bienestar se encuentran. Una experiencia exclusiva rodeada de paisajes extraordinarios.
-    <img src="assets/img/Resort de montaña al atardecer.png" alt="" class="imagen-ppal">
-    <a href="./pages/actividades.html">Actividades</a> 
-    <a href="./pages/resort.html">Conoce las membresias</a>
+
+        <!--PORTADA PRINCIPAL-->
+
+        <section class="portada">
+            <figure>
+                <img src="assets/img/Resort de montaña al atardecer.png" alt="resort rodeado de naturaleza"
+                    class="portada-imagen">
+            </figure>
+            <div class="portada-content">
+                <h4>CLUB RESORT DE MONTAÑA</h4>
+                <h1>DEPORTE, BIENESTAR Y EXCLUSIVIDAD</h1>
+                <p>Descubrí un lugar donde el deporte, la naturaleza y el bienestar se encuentran. Una experiencia
+                    exclusiva
+                    rodeada de paisajes extraordinarios.</p>
+
+                <div class="portada-acciones">
+                    <a class="portada-boton" href="./pages/actividades.html">ACTIVIDADES</a>
+                    <a class="portada-boton" href="./pages/resort.html">CONOCE EL RESORT</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTIVIDADES DESTACADAS -->
+
+        <section class="actividades-index">
+
+            <div class="actividades-intro">
+                <h2>ACTIVIDADES</h2>
+                <p>Descubrí experiencias deportivas en un entorno unico</p>
+            </div>
+
+            <div class="actividades-tarjetas">
+                <article class="actividad">
+                    <figure>
+                        <img src="./assets/img/Raqueta y pelota al atardecer.png" alt="Raqueta de tenis">
+                    </figure>
+                    <div class="actividad-info">
+                        <figure>
+                            <img src="./assets/iconos/tenis.svg">
+                        </figure>
+                        <div class="actividad-texto">
+                            <h3>TENIS</h3>
+                            <p>Canchas outdoor e indoor profesionales</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="actividad">
+                    <figure>
+                        <img src="./assets/img/Raquetas de pádel al atardecer.png" alt="Raqueta de padel">
+                    </figure>
+                    <div class="actividad-info">
+                        <figure>
+                            <img src="./assets/iconos/padel.svg">
+                        </figure>
+                        <div class="actividad-texto">
+                            <h3>PADEL</h3>
+                            <p>Pistas panorámicas de cristal templado y césped texturizado </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="actividad">
+                    <figure>
+                        <img src="./assets/img/Hierro de golf al atardecer.png" alt="Palo de golf">
+                    </figure>
+                    <div class="actividad-info">
+                        <figure>
+                            <img src="./assets/iconos/golf.svg">
+                        </figure>
+                        <div class="actividad-texto">
+                            <h3>GOLF</h3>
+                            <p>Campo de golf rodeado de un entorno natural único.</p>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+
+
+        </section>
+
+        <!-- HABITACIONES DESTACADAS -->
+        <section class="habitaciones-index">
+        </section>
+
     </main>
 
 
-    <footer>
-        <p>© 2026 Altitude Resort. Todos los derechos reservados. Diseñado con elegancia para ofrecer experiencias únicas.</p>
+    <footer class="valtitude-footer">
         <figure>
-            <img src="assets/logos/logo png.png" alt="">
+            <img src="assets/logos/logo png.png" alt="" class="footer-img">
         </figure>
+        <p class="footer-texto">© 2026 Valtitude Resort. Todos los derechos reservados. Diseñado con elegancia para ofrecer experiencias
+            únicas.</p>
     </footer>
 
 </body>
+
 </html>
